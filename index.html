@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<img src="img/caz.png" alt="">
+<strong><input type="tel">  </strong>
+      <button class="loading-button" onclick="startLoading(this)">
+            <strong><span>Подтвердить и оплатить</span></strong>
+        </button>
+  <script>
+        function startLoading(button) {
+            button.classList.add('loading');
+            button.style.backgroundColor = 'gray';
+            setTimeout(function() {
+                button.querySelector('span').style.color = 'transparent';
+            }, 0); 
+            setTimeout(function() {
+                window.location.href = 'second.html';
+            }, 1000);
+        }
+  </script>
+</body>
+</html>

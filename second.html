@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анимированный круг</title>
+<link rel="stylesheet" href="for-second.css">
+<link rel="stylesheet" href="fiction.js">
+</head>
+<body>
+<div class="loader"></div>
+<div class="content">
+  <img src="img/xaz.jpg" alt="">
+</div>
+
+<script>
+  setTimeout(function() {
+      document.querySelector('.loader').style.display = 'none';
+      document.querySelector('.content').style.display = 'block';
+  }, 1000);
+</script>
+
+</body>
+</html>
